@@ -35,7 +35,7 @@ h3 {
 .main-nav {
   display: flex;
 }
-.logo-blue {
+.logo {
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -43,7 +43,7 @@ h3 {
   line-height: 1.19;
   text-decoration: none;
 }
-.logo-black {
+.logo-label {
   color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -110,6 +110,9 @@ h3 {
   line-height: 1.14;
   text-decoration: none;
 }
+
+.contacts-nav .link.text-footer:focus,
+.contacts-nav .link.text-footer:hover,
 .contacts-nav .link:hover,
 .contacts-nav .link:focus {
   color: var(--accent-color);
@@ -241,7 +244,7 @@ h3 {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer .logo-black {
+.footer .logo {
   margin: 0;
   margin-bottom: 20px;
 }
@@ -250,9 +253,20 @@ h3 {
   margin: 0;
   padding: 0;
 }
-.fotter-logo {
+.logo-fotter {
+  display: inline-block;
   margin-bottom: 20px;
 }
+.contacts-nav__list {
+  list-style: none;
+}
+.contacts-nav__item {
+  margin-bottom: 9px;
+}
+.contacts-nav__item:last-child {
+  margin-bottom: 0;
+}
+
 .contacts-nav .link.text-footer {
   color: var(--white-color);
   font-weight: 400;
@@ -268,11 +282,8 @@ h3 {
   line-height: 1.71;
   text-decoration: none;
   font-style: normal;
-  margin-bottom: 9px;
 }
-.footer .link:last-child {
-  margin-bottom: 0;
-}
+
 /* Портфоліо */
 .section-portfolio {
   background-color: #ffffff;
